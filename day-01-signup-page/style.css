@@ -1,0 +1,58 @@
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.text{
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 5px;
+    display: block;
+}
+
+ input {
+     width: 300px;
+     padding: 10px;
+     font-size: 16px;
+     margin-bottom: 10px;
+     box-sizing: border-box;
+ }
+
+ .password-container {
+     position: relative;
+     width: 300px;
+ }
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+}
+
+#header{
+    position: relative;
+}
+
+#signUp{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
